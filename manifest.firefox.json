@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "FD transparent",
+  "version": "3.0.1",
+
+  "description": "Ajoute un bouton pour activer et désactiver la transparence des images sur le Forum Dessiné (https://forum-dessine.fr).",
+
+  "icons": {
+    "48": "icon48.png",
+    "96": "icon96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.forum-dessine.fr/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+	"scripts": ["permissions.js", "background.js"]
+  },
+
+  "permissions": [
+    "storage",
+	"*://*.forum-dessine.fr/*"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{9bf41bb9-68ed-49b8-9866-5caf0725e153}"
+    }
+  }
+}

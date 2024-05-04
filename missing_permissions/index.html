@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FD Transparent - Permissions Manquantes</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		p, button {
+			font-family: "comic sans ms";
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		button {
+			border-radius: 6px;
+			border-width: 2px;
+			padding: 6px;
+		}
+
+		body > div {
+			padding: 0 10px; /* ugly padding */
+			border: solid 2px black; /* ugly borders */
+			border-radius: 6px;
+		}
+
+		p > img {
+			display: inline-block;
+			height: 1.5em;
+			vertical-align: bottom;
+		}
+
+		#boutonbox {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p id="msg">
+			...
+		</p>
+		<p id="boutonbox">
+			<button id="bouton" style="display: inline-block; text-align: right;">
+				Accorder la permission
+			</button>
+			&lt;- bouton moche
+		</p>
+	</div>
+	<script type="text/javascript" src="/permissions.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
